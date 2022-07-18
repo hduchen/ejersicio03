@@ -8,11 +8,16 @@
 
 * luego se realizo un docker inspect 
 
-    >  docker inspect nicopaez/passwordapi-java:java8-fabric
+    >  docker image history nicopaez/passwordapi-java:java8-fabric
 
-    >  docker inspect nicopaez/passwordapi-java:java8-alpine
-* Fabric tiene 10 layers
+    >  docker image history nicopaez/passwordapi-java:java8-alpine
 
-* alpine tiene 4 layers
+* Fabric tiene 17 capas
 
-* en comun tiene la layer --> sha256:73046094a9b835e443af1a9d736fcfc11a994107500e474d0abf399499ed280c
+* alpine tiene 11 capas
+
+* en comun tienen
+    >  CMD ["/bin/sh"]
+
+    >  ADD file:25f61d70254b98
+
